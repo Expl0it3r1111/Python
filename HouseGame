@@ -1,0 +1,134 @@
+import time
+
+def choosenDoor():
+	print('You approach the house on the end of the block and knock.')
+	print('As soon as your knuckle taps the large door, it sways open..')
+	time.sleep(2)
+	print('You decide to step in and the door shuts and locks behind you..')
+	time.sleep(2)
+	print('Upon looking around the room, you discover two doors.')
+	time.sleep(2)
+	print('''one to your left and one to your right
+The left door is numbered 1 and the right door is numbered 2''')
+def checkDoor(choosenDoor):
+    door = raw_input("Which door do you go through? (1 or 2):")
+    if door == "1":
+        print("A trap! Swinging axes from all sides of the room rush at you. You are now dead")
+        import sys
+        sys.exit()
+    elif door == "2": 
+        print("It is an empty room with a few tattered banners hanging and candles melted")
+        time.sleep(2)
+def choosenHall():
+    print('''There is a hall with a large bloody streak scaling the length of the pass and
+    the second hall has a worn sign stating "Beware of Monster beyond this entry"''')
+    time.sleep(2)
+    print('Suddenly! The door behind you slams shut with a "BANG" and the room darkens')
+def checkHall(choosenHall):
+    hall = raw_input("Which hall do you choose? (1-Bloody or 2-Beware?):")
+    if hall == "1":
+    	print('As you walk down the dark hall, you feel the uneven stone beneath you. Coming close to the end and you suddenly loose feeling of the floor..')
+    	time.sleep(2)
+        print("The floor vanishes from below your feet and you begin to freefall until..")
+        time.sleep(2)
+        print('You are stopped abruptly and your lifeless body remains to rot for years at the base of that hole...')
+        import sys
+        sys.exit()
+    elif hall == "2": 
+        print('You walk towards the hall...')
+        print('Sliding your hand along it for guidence...')
+        time.sleep(2)
+        print('You walk slowly down the hall treading carefully')
+        time.sleep(2)
+        print('counting every step until reaching the end of the dark, damp hall when suddenly...')
+        time.sleep(2)
+def choosenAttack():
+    print('Stepping into the room, you are taken back by its enormity')
+    time.sleep(2)
+    print('Gazing up, the ceiling is too high to measure and the room stretches further than you can see.')
+    time.sleep(2)
+    print('Lined around the room is cages for large and small creatures alike.')
+    time.sleep(2)
+    print('Walking up to a cage, you catch a glimpse of bones..')
+    time.sleep(2)
+    print('You come to the relization they are human...')
+    time.sleep(2)
+    print('Thats when you hear it... A low snarl that starts growing closer...')
+    time.sleep(2)
+    print('The grotesque creature steps from behind a cage and its orange glowing eyes are fixed on you.')
+    time.sleep(2)
+    print('It is going to attack and soon... You know there are only two options...')
+def checkAttack(choosenAttack):
+	attack = raw_input("Will you run or will you fight? (1-Fight or 2-Run):")
+	if attack == "2":
+		print('You quickly make a run the opposite direction searching for any door, hall, or high space to escape the beast.')
+		time.sleep(2)
+		print('You round a corner then another and another until you reach a corner with a large cage resting on a wall.')
+		time.sleep(2)
+		print('You attempt to jump and climb your way up. Grasping the top of the cage you begin pulling yourself up when you feel the beast bite into your leg.')
+		time.sleep(2)
+		print('The strength of it starts to pull you down, your clutch of the railing slips and the beast starts digging his teeth into your flesh.')
+		time.sleep(2)
+		print('Your screaming and squirming beings to fade as the beast ravages your body leaving nothing but shattered bones and a pool of blood marking your permanent grave...')
+		import sys
+		sys.exit()
+	elif attack == "1":
+		print('You reach for a stone by your feet and run towards the animal.')
+		time.sleep(2)
+		print('It is immediatly on you as you charge.. Its jaw open in anticipation for your flesh.')
+		time.sleep(2)
+		print('It leeps at you as you come close and you swiftly jump to the side and grasp its neck from behind smashing your stone on its skull')
+		time.sleep(2)
+		print('The beast howls and yelps with ever blow you deliver, jumping wildly and snapping at you.')
+		time.sleep(2)
+		print('Finally the beast collapses and begins twitching in a pool of its own blood...It has been defeated...')
+def choosenChoice():
+	print('After defeating the beast, you start to search for an exit of of the cell room')
+	time.sleep(2)
+	print('Finally spotting a pathway out, you start to walk towards it when you hear a wimper')
+	time.sleep(2)
+	print('You start to look for the whimper and with every step you hear it more and more')
+	time.sleep(2)
+	print('Coming around a corner you spot a small child...A little girl no older than 7..')
+	time.sleep(2)
+	print('She has a hurt leg with some blood dripping down, the leg is deformed and obviously broken.')
+	time.sleep(2)
+	print('She seems afraid of you as you reach out to her. She draws away from your hand')
+	time.sleep(2)
+	print('You know you either need to leave her or bring her with you.')
+def checkChoice(choosenChoice):
+	choice = raw_input('Are you going to bring her with you or leave her to die? (1-Bring or 2-Leave):')
+	if choice == "1":
+		print('You bend down to pick the child up and she reaches her arms out to you.')
+		time.sleep(2)
+		print('She wraps her arms around you and burys her head in your shoulder and you stand up')
+		time.sleep(2)
+		print('As you go to walk away, you feel her head rise and a small growl emits from the childs mouth..')
+		time.sleep(3)
+		print('The childs skin turn a greyish hue and her teeth become fangs...')
+		time.sleep(2)
+		print('Her grip becomes stronger than a grown mans and you cannot release her.')
+		time.sleep(2)
+		print('She then starts biting into your shoulder and tearing flesh ')
+		time.sleep(2)
+		print('Blood is pulsing from the open wound on your neck and you slowly lose conciousness until you fade into the darkness.. you helped the child, but lost your life in the end...')
+		import sys
+		sys.exit()
+	elif choice == "2":
+		print('You begin to walk away and the girl wimpers in the corner.')
+		time.sleep(2)
+		print('Without looking back you hear the girl begin to cry loudly then nothing. Not a noise to be heard...')
+		time.sleep(4)
+		print('You turn to look back and to your shock and horror, you see the girl having her throat ripped into by the pup of the beast you had just slain...')
+		time.sleep(3)
+		print('Knowing there is nothing you can do for her now you conintue in a jog to reach the doorway.')
+playAgain = 'yes'
+if playAgain == 'yes' or playAgain == 'y':
+  doorNumber = choosenDoor()
+  checkDoor(doorNumber)
+  hallNumber = choosenHall()
+  checkHall(hallNumber)
+  attackNumber = choosenAttack()
+  checkAttack(attackNumber)
+  choiceNumber = choosenChoice()
+  checkChoice(choiceNumber)
